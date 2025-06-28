@@ -5,7 +5,7 @@ if (!isset($_SESSION['logged_in'])) {
     exit;
 }
 
-$conn = new mysqli("sql211.infinityfree.com", "if0_39343081", "0114Lionel0114", "if0_39343081_hr_login");
+$conn = new mysqli("localhost", "root", "", "hr_login");
 $id = (int) $_GET['id'];
 $u = $conn->query("SELECT * FROM users WHERE id = $id")->fetch_assoc();
 

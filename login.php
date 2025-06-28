@@ -1,7 +1,6 @@
 <?php
 session_start();
-$conn = new mysqli("sql211.infinityfree.com", "if0_39343081", "0114Lionel0114", "if0_39343081_hr_login");
-
+$conn = new mysqli("localhost", "root", "", "hr_login");
 if ($conn->connect_error) die("DB Error");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
